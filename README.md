@@ -16,13 +16,16 @@ Lecciones destiladas de proyectos reales. Captura el **por qué** detrás de las
 
 **Como lector** (cuando arranques un proyecto nuevo):
 
-- Empezá por `workflow/` para el framework operativo.
+- Empezá por `bootstrap/` si estás escogiendo stack y arrancando desde cero.
+- Después por `workflow/` para el framework operativo.
 - Revisá `antipatterns/` antes de tomar decisiones arquitectónicas — filtra errores ya cometidos.
 - Usá `multitenant-db/`, `ci-cd/`, `subagents/` como referencias específicas cuando llegues a ese problema.
 
 ## Estructura
 
 ```
+bootstrap/         Starters integrales para un tipo de proyecto (multi-tenant
+                   SaaS, etc.). Punto de partida cuando arrancás de cero
 workflow/          Cómo opera el equipo (Cowork ↔ Claude Code, git flow,
                    decisiones cross-cutting)
 multitenant-db/    Patrones de base de datos multi-tenant (RLS, roles,
